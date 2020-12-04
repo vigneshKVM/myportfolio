@@ -70,7 +70,6 @@ const Home = () => {
         </Header>
           <main>
               <Banner id='home'>
-                  {/*<DetailsBackground/>*/}
                   <DeveloperImage>
                       <Image src="vignesh.png" alt="Profile Pic"/>
                   </DeveloperImage>
