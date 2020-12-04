@@ -54,6 +54,9 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 /********************************************/
 
 const Home = () => {
+
+    const prefix = '/myportfolio';
+
   return (
       <>
         <GlobalStyles/>
