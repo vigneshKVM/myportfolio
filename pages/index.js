@@ -80,7 +80,7 @@ const Home = () => {
                       <Logo>Hi, I'm <br/> Vignesh Moorthy,</Logo>
                       <LogoSubHeading>A FullStack Web Developer.</LogoSubHeading>
                       <LogoDescription>"With passion for Web App, Mobile Applications Development and SEO Optimization of the Applications Developed."</LogoDescription>
-                      <ResumeDownload href='/VigneshMoorthy.pdf' download>Download Resume</ResumeDownload>
+                      <ResumeDownload href='/myportfolio/VigneshMoorthy.pdf' download>Download Resume</ResumeDownload>
                   </Details>
               </Banner>
               <Professional id='professional'>

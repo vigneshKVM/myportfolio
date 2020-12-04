@@ -8,7 +8,7 @@ import CodingSVGContactUs from "../public/components/codingSVGContactUs";
 /********************************************/
 
 export const Header = styled.header`
-    max-width: 1400px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     background: white;
