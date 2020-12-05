@@ -55,9 +55,9 @@ import { FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 
 const Home = () => {
 
-    const [click, setClick] = useState(false);
+    // const [click, setClick] = useState(false);
 
-    const handleClick = () => setClick(!click);
+    // const handleClick = () => setClick(!click);
     const prefix = '/myportfolio';
 
   return (
@@ -65,10 +65,10 @@ const Home = () => {
         <GlobalStyles/>
         <Header>
             <NavContainer>
-                <HamburgerIcon onClick={handleClick}>
-                    {click ? <FaTimes/> : <FaBars/>}
-                </HamburgerIcon>
-                <Nav onClick={handleClick} click={click}>
+                {/*<HamburgerIcon onClick={handleClick}>*/}
+                {/*    {click ? <FaTimes/> : <FaBars/>}*/}
+                {/*</HamburgerIcon>*/}
+                <Nav >
                     <NavItem><NavItemLink href="#home"> Home</NavItemLink></NavItem>
                     <NavItem><NavItemLink href="#professional">Professional </NavItemLink></NavItem>
                     <NavItem><NavItemLink href="#experience">Experience</NavItemLink></NavItem>
