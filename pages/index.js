@@ -203,7 +203,7 @@ const Home = () => {
                   <PortfolioImages>
                       <PortfolioImageSite>
                           <PortfolioImageLink href='https://kdramafuns.com/' target="_blank" >
-                              <PortfolioImage src='kdramafuns.png' alt='kdramafuns'/>
+                              <PortfolioImage src='kdramafuns.jpg' alt='kdramafuns'/>
                               <PortfolioImageTitle>Kdramafuns.com</PortfolioImageTitle>
                               <PortfolioImageDescription>This Website has been developed using PHP, and MySQL as the Database.</PortfolioImageDescription>
                           </PortfolioImageLink>
@@ -211,7 +211,7 @@ const Home = () => {
 
                       <PortfolioImageSite>
                           <PortfolioImageLink href='https://kdramaviewer.com/' target="_blank" >
-                              <PortfolioImage src='kdramaviewer.png' alt='kdramaviewer'/>
+                              <PortfolioImage src='kdramaviewer.jpg' alt='kdramaviewer'/>
                               <PortfolioImageTitle>Kdramaviewer.com</PortfolioImageTitle>
                               <PortfolioImageDescription>This Website has been developed using WordPress.</PortfolioImageDescription>
                           </PortfolioImageLink>
