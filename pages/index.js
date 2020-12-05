@@ -44,7 +44,7 @@ import {
     ContactSocialLinks,
     ContactDetailsContainer,
     ContactDetail,
-    ContactDetailsList, ContactDetailsHeading, Main, NavItemLink, HamburgerIcon
+    ContactDetailsList, ContactDetailsHeading, Main, NavItemLink, HamburgerIcon, PortfolioImageSite
 } from "../styles/home.style";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -201,16 +201,21 @@ const Home = () => {
                   <PortfolioHeading>03. Portfolio</PortfolioHeading>
                   <PortfolioHeadingDescription>All Sites Developed By Me.</PortfolioHeadingDescription>
                   <PortfolioImages>
-                      <PortfolioImageLink href='https://kdramafuns.com/' target="_blank" >
-                          <PortfolioImage src='kdramafuns.png' alt='kdramafuns'/>
-                          <PortfolioImageTitle>Kdramafuns.com</PortfolioImageTitle>
-                          <PortfolioImageDescription>This Website has been developed using PHP, and MySQL as the Database.</PortfolioImageDescription>
-                      </PortfolioImageLink>
-                      <PortfolioImageLink href='https://kdramaviewer.com/' target="_blank" >
-                          <PortfolioImage src='kdramaviewer.png' alt='kdramaviewer'/>
-                          <PortfolioImageTitle>Kdramaviewer.com</PortfolioImageTitle>
-                          <PortfolioImageDescription>This Website has been developed using WordPress.</PortfolioImageDescription>
-                      </PortfolioImageLink>
+                      <PortfolioImageSite>
+                          <PortfolioImageLink href='https://kdramafuns.com/' target="_blank" >
+                              <PortfolioImage src='kdramafuns.png' alt='kdramafuns'/>
+                              <PortfolioImageTitle>Kdramafuns.com</PortfolioImageTitle>
+                              <PortfolioImageDescription>This Website has been developed using PHP, and MySQL as the Database.</PortfolioImageDescription>
+                          </PortfolioImageLink>
+                      </PortfolioImageSite>
+
+                      <PortfolioImageSite>
+                          <PortfolioImageLink href='https://kdramaviewer.com/' target="_blank" >
+                              <PortfolioImage src='kdramaviewer.png' alt='kdramaviewer'/>
+                              <PortfolioImageTitle>Kdramaviewer.com</PortfolioImageTitle>
+                              <PortfolioImageDescription>This Website has been developed using WordPress.</PortfolioImageDescription>
+                          </PortfolioImageLink>
+                      </PortfolioImageSite>
                   </PortfolioImages>
               </Portfolio>
               <Contact id='contact'>
