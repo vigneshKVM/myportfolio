@@ -376,7 +376,8 @@ export const OtherListItem = styled.li`
 
 export const Experience = styled.section`
     height: 2000px;
-    background: url("mountainRanges.jpg") center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("mountainRanges.jpg") center center no-repeat;
+    background-size: cover;
     
     
     @media screen and (max-width: 960px) {
