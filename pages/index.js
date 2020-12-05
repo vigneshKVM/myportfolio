@@ -44,17 +44,20 @@ import {
     ContactSocialLinks,
     ContactDetailsContainer,
     ContactDetail,
-    ContactDetailsList, ContactDetailsHeading
+    ContactDetailsList, ContactDetailsHeading, Main, NavItemLink, HamburgerIcon
 } from "../styles/home.style";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdWork, MdEmail } from "react-icons/md";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 
 /********************************************/
 
 const Home = () => {
 
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
     const prefix = '/myportfolio';
 
   return (
@@ -62,16 +65,19 @@ const Home = () => {
         <GlobalStyles/>
         <Header>
             <NavContainer>
-                <Nav>
-                    <li><NavItem href="#home"> Home</NavItem></li>
-                    <li><NavItem href="#professional">Professional </NavItem></li>
-                    <li><NavItem href="#experience">Experience</NavItem></li>
-                    <li><NavItem href="#portfolio">Portfolio</NavItem></li>
-                    <li><NavItem href="#contact">Contact</NavItem></li>
+                <HamburgerIcon onClick={handleClick}>
+                    {click ? <FaTimes/> : <FaBars/>}
+                </HamburgerIcon>
+                <Nav onClick={handleClick} click={click}>
+                    <NavItem><NavItemLink href="#home"> Home</NavItemLink></NavItem>
+                    <NavItem><NavItemLink href="#professional">Professional </NavItemLink></NavItem>
+                    <NavItem><NavItemLink href="#experience">Experience</NavItemLink></NavItem>
+                    <NavItem><NavItemLink href="#portfolio">Portfolio</NavItemLink></NavItem>
+                    <NavItem><NavItemLink href="#contact">Contact</NavItemLink></NavItem>
                 </Nav>
             </NavContainer>
         </Header>
-          <main>
+          <Main>
               <Banner id='home'>
                   <DeveloperImage>
                       <Image src="vignesh.png" alt="Profile Pic"/>
@@ -235,7 +241,7 @@ const Home = () => {
               <ContactSocialLinks>
 
               </ContactSocialLinks>
-          </main>
+          </Main>
       </>
   )
 }
