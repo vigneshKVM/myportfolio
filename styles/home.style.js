@@ -249,7 +249,7 @@ export const ResumeDownload = styled.a`
 /********************************************/
 
 export const Professional = styled.section`
-    height:1400px;
+    height:1200px;
     background: #847dff;
     position: relative;
     
@@ -300,13 +300,12 @@ export const ProfessionalHeadingDescription = styled.h2`
 export const ProfessionalImage = styled(ProfessionalSVG)`
     position: absolute;
     width: 600px;
-    top: 20rem;
+    top: 15rem;
     left: 4rem;
     
     @media screen and (max-width: 1085px) {
         width: 100%;
         position: inherit;
-        padding: 3rem 0;
     }
 `;
 
@@ -477,7 +476,7 @@ export const PortfolioImages = styled.div`
     justify-content: center;
     margin: 2rem;
     flex-wrap: wrap;
-`
+`;
 
 /********************************************/
 
@@ -489,6 +488,7 @@ export const PortfolioImageLink = styled.a`
     @media screen and (max-width: 960px) {
         padding: 1rem 0;
         width: 100%;
+        height: auto;
     }
 `
 
@@ -561,6 +561,7 @@ export const ContactImage = styled(CodingSVGContactUs)`
     width: 600px;
     top: 20rem;
     left: 20rem;
+    display: block;
     
     @media screen and (max-width: 960px) {
         position: inherit;
