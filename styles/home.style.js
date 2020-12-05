@@ -249,13 +249,15 @@ export const ResumeDownload = styled.a`
 /********************************************/
 
 export const Professional = styled.section`
-    height:1200px;
+    height:auto;
     background: #847dff;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 8rem;
+    
     
     @media screen and (max-width: 1085px) {
         height: auto;
