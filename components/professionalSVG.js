@@ -6,7 +6,7 @@ function ProfessionalSVG(props) {
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             width={1126.194}
-            height={855}
+            height={400}
             viewBox="0 0 1126.194 855"
             {...props}
         >
