@@ -44,7 +44,12 @@ import {
     ContactSocialLinks,
     ContactDetailsContainer,
     ContactDetail,
-    ContactDetailsList, ContactDetailsHeading, Main, NavItemLink, HamburgerIcon, PortfolioImageSite
+    ContactDetailsList,
+    ContactDetailsHeading,
+    Main,
+    NavItemLink, 
+    HamburgerIcon,
+    PortfolioImageSite
 } from "../styles/home.style";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -110,6 +115,7 @@ const Home = () => {
                           <ListItem>Angular</ListItem>
                           <ListItem>NextJS</ListItem>
                           <ListItem>Gatsby</ListItem>
+                          <ListItem>NodeJS</ListItem>
                           <ListItem>ExpressJS</ListItem>
                           <ListItem>Laravel</ListItem>
                           <ListItem>Wordpress</ListItem>
