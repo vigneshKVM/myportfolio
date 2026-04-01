@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: '+91-8344420440',
   github: 'https://github.com/vigneshKVM',
   linkedin: 'https://www.linkedin.com/in/vignesh-moorthy',
-  resume: '/VigneshMoorthy.pdf',
+  resume: `${process.env.PUBLIC_URL}/vigneshmoorthy.pdf`,
   location: 'Chennai, India',
   yearsOfExperience: '6+',
 };

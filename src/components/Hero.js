@@ -119,7 +119,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full border-2 border-brand/30" />
               {/* Image */}
               <img
-                src="/vignesh.jpg"
+                src={`${process.env.PUBLIC_URL}/vignesh.jpg`}
                 alt={personalInfo.name}
                 className="relative w-full h-full rounded-full object-cover object-top border-4 border-surface"
               />
