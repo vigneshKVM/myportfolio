@@ -1,30 +1,117 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vignesh Moorthy K — Portfolio
 
-## Getting Started
+A modern, premium portfolio website built with **React** (Create React App), **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+Designed to position a Senior Software Engineer transitioning into a Solution Architect role — with architecture-driven case studies, animated sections, and a dark-first design inspired by Stripe, Vercel, and Linear.
 
-```bash
-npm run dev
-# or
-yarn dev
+---
+
+## 🚀 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 18 (Create React App) |
+| Styling | Tailwind CSS v3 |
+| Animations | Framer Motion |
+| Icons | React Icons |
+| Scroll detection | react-intersection-observer |
+| Fonts | Inter + JetBrains Mono (Google Fonts) |
+
+---
+
+## 📁 Project Structure
+
+```
+myportfolio/
+├── public/
+│   ├── index.html          # HTML entry point
+│   ├── favicon.ico
+│   └── VigneshMoorthy.pdf  # Resume (replace with your latest)
+├── src/
+│   ├── index.js            # React DOM entry
+│   ├── index.css           # Tailwind directives + custom styles
+│   ├── App.js              # Root component — assembles all sections
+│   └── components/
+│       ├── data.js         # ⭐ All content lives here — edit this to customize
+│       ├── Navbar.js       # Fixed nav with mobile hamburger menu
+│       ├── Hero.js         # Animated hero with stats and CTAs
+│       ├── About.js        # Story-driven about section with trait cards
+│       ├── Skills.js       # Filterable skill bars grouped by category
+│       ├── Projects.js     # Expandable case study cards
+│       ├── Architecture.js # System design thinking section
+│       ├── Experience.js   # Animated career timeline
+│       ├── Achievements.js # Awards + Currently Learning progress bars
+│       ├── Contact.js      # Email, GitHub, LinkedIn links
+│       ├── SectionWrapper.js # Reusable scroll-triggered fade-in wrapper
+│       └── Footer.js
+├── tailwind.config.js
+├── postcss.config.js
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-## Learn More
+### Install dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Run development server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build for production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run build
+```
+
+---
+
+## ✏️ How to Customize
+
+All content is centralized in **`components/data.js`**. You only need to edit that one file to update:
+
+- Personal info (name, email, GitHub, LinkedIn)
+- Skills and proficiency levels
+- Case study projects (problem, solution, architecture, impact)
+- Work experience timeline
+- Achievements and certifications
+- Currently learning topics
+
+### Replace your resume
+
+Drop your updated PDF into `public/` and name it `VigneshMoorthy.pdf`, or update the `resume` field in `components/data.js`.
+
+---
+
+## 🎨 Design System
+
+| Token | Value |
+|---|---|
+| Primary color | `#6366f1` (Indigo) |
+| Background | `#0f0f13` |
+| Card surface | `#16161d` |
+| Font — body | Inter |
+| Font — code | JetBrains Mono |
+| Theme | Dark (default) |
+
+---
+
+## 📄 Sections
+
+1. **Hero** — Name, title, tagline, stats, CTAs
+2. **About** — Story-driven with engineering trait cards
+3. **Skills** — Animated bars, filterable by category
+4. **Projects** — Architecture-driven case studies (expandable)
+5. **Architecture Thinking** — System design mental models
+6. **Experience** — Impact-focused career timeline
+7. **Achievements** — Awards, certifications, currently learning
+8. **Contact** — Email, GitHub, LinkedIn, resume download
